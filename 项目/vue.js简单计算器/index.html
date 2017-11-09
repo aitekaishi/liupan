@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>liupan</title>
+
+<link type="text/css" rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div id="app">
+  <div class="calculator">
+    <div class="display">{{ display }}</div>
+    <h1 class="brand">{{ appTitle }}</h1>
+    <div class="keyboard"> 
+      <div class="panel-a">
+        <div class="top-buttons">
+          <button class="btn primary" @click="clear"> <span>C  </span></button>
+          <button class="btn" @click="setNumber('.')"><span>.</span></button>
+        </div>
+        <div class="numbers">
+          <button class="btn" @click="setNumber('9')"><span>9</span></button>
+          <button class="btn" @click="setNumber('8')"><span>8</span></button>
+          <button class="btn" @click="setNumber('7')"><span>7</span></button>
+          <button class="btn" @click="setNumber('6')"><span>6</span></button>
+          <button class="btn" @click="setNumber('5')"><span>5</span></button>
+          <button class="btn" @click="setNumber('4')"><span>4</span></button>
+          <button class="btn" @click="setNumber('3')"><span>3</span></button>
+          <button class="btn" @click="setNumber('2')"><span>2</span></button>
+          <button class="btn" @click="setNumber('1')"><span>1</span></button>
+          <button class="btn" @click="setNumber('0')"><span>0</span></button>
+        </div>
+      </div>
+      <div class="panel-b">
+        <button class="btn" @click="operator= '+'"> <span>+</span></button>
+        <button class="btn" @click="operator= '-'"> <span>-</span></button>
+        <button class="btn" @click="operator= '*'"> <span>*</span></button>
+        <button class="btn" @click="operator= ''"> <span>/</span></button>
+        <button class="btn primary" @click="calculate"> <span>=</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src='js/vue.min.js'></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+*{ 
+	margin:0; padding: 0; 
+}
+.wrapper{ 
+	position: relative;
+	float: left;
+	margin:10px; 
+	background-color: #ccc;
+}
+.grid{
+	float: left;
+	border:1px solid #666;
+}
+.black,.white{
+	position: absolute;
+}
+.black{
+	background-color:#000;			
+}
+.white{
+	background-color:#fff;
+}
+#control {
+	float: left;
+	margin: 100px;
+}
+#control button{
+	width: 100px;
+	height: 40px;
+	border: 1px solid #333;
+	background-color: #fff;
+	color:#333;
+	cursor: pointer;
+}

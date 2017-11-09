@@ -1,0 +1,123 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  font-family: 'Microsoft YaHei','Lantinghei SC','Open Sans',Arial,'Hiragino Sans GB','STHeiti','WenQuanYi Micro Hei','SimSun',sans-serif;
+  font-size: 16px;
+}
+
+.calculator {
+  width: 30rem;
+  max-width: 100%;
+  margin: 3rem auto;
+  padding: .3rem;
+}
+.calculator .display {
+  height: 4rem;
+  line-height: 4rem;
+  margin: 0 .3rem;
+  padding: 0 0;
+  text-align: right;
+  font-size: 1.5em;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.calculator .brand {
+  margin: .6rem 0 0.3rem;
+  padding: 0 .3rem;
+  text-align: right;
+  font-size: .65em;
+  color: rgba(255, 255, 255, 0.85);
+}
+.calculator .keyboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.calculator .keyboard .btn {
+  margin: 0;
+  padding: 0;
+  height: 4.6rem;
+  line-height: 4rem;
+  text-align: center;
+  font-family: inherit;
+  font-size: 1.25em;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+.calculator .keyboard .btn:hover{
+	cursor: pointer;
+}
+.calculator .keyboard .btn:hover span {
+  background: #4d4d4d;
+}
+.calculator .keyboard .btn span {
+  display: block;
+  margin: .3rem;
+  color: #fff;
+  background: #333;
+  border-radius: 3px;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+}
+.calculator .keyboard .btn.primary:hover span {
+  background: #6bb6ff;
+}
+.calculator .keyboard .btn.primary span {
+  background: dodgerblue;
+}
+.calculator .keyboard .panel-a {
+  width: 75%;
+}
+.calculator .keyboard .panel-a .top-buttons .btn {
+  width: 33.3%;
+}
+.calculator .keyboard .panel-a .top-buttons .btn:last-of-type {
+  float: right;
+}
+.calculator .keyboard .panel-a .top-buttons .btn span {
+  font-weight: bold;
+}
+.calculator .keyboard .panel-a .numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+.calculator .keyboard .panel-a .numbers .btn {
+  width: 33.3%;
+}
+.calculator .keyboard .panel-a .numbers .btn:nth-child(10) {
+  width: 100%;
+}
+.calculator .keyboard .panel-b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25%;
+}
+.calculator .keyboard .panel-b .btn {
+  width: 100%;
+}
+.calculator .keyboard .panel-b .btn span {
+  font-weight: bold;
+}

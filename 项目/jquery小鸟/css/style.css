@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  font-weight: 200;
+  user-select: none;
+}
+
+body {
+  font-size: 14px;
+}
+
+p {
+  font-size: 90%;
+  line-height: 25px;
+}
+
+/* Wrapper */
+.wrapper {
+  width: 350px;
+  margin: 20px auto;
+}
+
+/* Window */
+.window {
+	height: 450px;
+	background: url('../img/background.png');
+	position: relative;
+	overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* Score */
+.name{
+	text-align: center;
+	font-size: 250%;
+	padding: 10px;
+}
+.score {
+  position: absolute;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 250%;
+  padding-top: 20px;
+  color: yellow;
+  font-weight: 700;
+  text-shadow: 2px 2px 0 #000;
+  z-index: 4;
+}
+
+/* Bird */
+.bird {
+	height: 28px;
+	width: 40px;
+	background: url('../img/bird_Sprite.png');
+	position: absolute;
+	bottom: 50%;
+	left: 130px;
+	z-index: 3;
+  animation: birdFlap 0.2s steps(3, end) infinite alternate;
+  transition: transform 0.3s;
+}
+
+@keyframes birdFlap {  
+  0% {background-position: 0 84px;}
+  100% {background-position: 0 0;}
+}
+
+/* Pipes */
+.pipe {
+	width: 60px;
+	height: 100%;
+	position: absolute;
+	right: -60px;
+	z-index: 2;
+}
+
+.pipe.hidden {
+  display: none;
+}
+
+.pipe .topHalf {
+	background: url('../img/pipe.png') bottom;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.pipe .bottomHalf {
+	background: url('../img/pipe.png');
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+button{
+	margin-left: 48%;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+button:hover{
+	background: #FFFF00;
+}
